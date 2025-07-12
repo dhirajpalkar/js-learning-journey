@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+    }
+    .center_box {
+      background: #383434;
+      height: 300px;
+      width: 500px;
+      padding: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="center_box">
+      <h1>Find even/odd number</h1>
+      <div style="display: flex;">
+        <input type="number" id="check_number" placeholder="Enter number" />
+        <button onclick="find_result()">submit</button>
+      </div>
+      <h3 id="result"></h3>
+    </div>
+    <script>
+      // function find_result() {
+      //   var a = document.getElementById("check_number").value;
+      //   if (a % 2 == 0) {
+      //     console.log("number is even");
+      //     document.getElementById("result").innerText = "even";
+      //   } else {
+      //     console.log("number is odd");
+      //     document.getElementById("result").innerText = "odd";
+      //   }
+      // }
+
+      function find_result() {
+        var a = document.getElementById("check_number").value;
+        var result = a % 2 == 0 ? "even" : "odd";
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>
