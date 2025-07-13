@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+    }
+    .center_box {
+      background: #383434;
+      height: 300px;
+      width: 500px;
+      padding: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="center_box">
+      <h1>Factorial of a number</h1>
+      <input type="number" id="number">
+      <button onclick="check()">Submit</button>
+      <p id="result"></p>
+    </div>
+    <script>
+        function check(){
+            let num = document.getElementById('number').value;
+            let result = 1
+            for(let i = 2;i <= num; i++){
+                result *= i;
+            }
+            return document.getElementById('result').innerText = result;
+
+        }
+    </script>
+  </body>
+</html>
