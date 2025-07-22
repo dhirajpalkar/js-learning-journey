@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array in datails</h1>
+    <p>collection of different data type</p>
+    <p>
+        array all type example here and that all different type of the data
+        checking and more data
+    </p>
+    <div id="card-container"></div>
+    <script>
+        // let mark = [12, 45, 56, 67];
+        // let student = ["ritesh", "ganesh", "aniket", "sandip"];
+        // let place = ["pune", "mumbai", "delhi", "goa"];
+        // for (let i = 0; i < mark.length; i++) {
+        //     document.getElementById("card-container").innerHTML += `<div class="">${i}</div>`;
+        // }
+
+        let item = [210, 340, 400, 600, 324, 345];
+
+        for (let i = 0; i < item.length; i++) {
+            console.log("without offer =", item[i]);
+            let offer = item[i] / 10;
+            item[i] -= offer;
+            console.log("with offer=", item[i]);
+            document.getElementById('card-container').innerHTML += `<div> with offers ${item[i]}</div> `
+        }
+
+    </script>
+</body>
+
+</html>
